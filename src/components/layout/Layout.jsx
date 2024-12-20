@@ -1,12 +1,16 @@
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
+
+
 export default function Layout({children}){
     return(
         <>
             <div>
                 {/* modals */}
             </div>
-            <div>
+            <Header/>
                 {children}
-            </div>
+            <Footer/>
         </>
     )
 }
