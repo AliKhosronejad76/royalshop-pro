@@ -1,6 +1,6 @@
 import BrandsSlider from "./BrandsSlider";
 import Row from "../../modules/row/Row";
-import ZoomBanner from "../../modules/ZoomBanner";
+import ZoomBanner from "../../modules/zoomBanner/ZoomBanner";
 import { FaSun } from "react-icons/fa6";
 
 
