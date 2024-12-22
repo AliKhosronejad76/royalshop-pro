@@ -4,10 +4,13 @@ import PopularBrandsSection from "../components/Homepage/popularbrandssection/Po
 import Bestselling from "../components/Homepage/besetselling/Bestselling";
 import SpecialProducts from "../components/Homepage/specialproducts/SpecialProducts";
 import GroupingSection  from "../components/Homepage/groupingSection/GroupingSection";
+import Banner from "../components/Homepage/banner/Banner";
+
 
 export default function Home(){
     return(
         <>
+            <Banner/>
             <GroupingSection />
             <SpecialProducts />
             <Bestselling/>
