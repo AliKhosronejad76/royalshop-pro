@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import SlideItem from "./SlideItem"
-import { MdKeyboardArrowRight } from "react-icons/md"
-import { MdKeyboardArrowLeft } from "react-icons/md"
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
+import SlideItem from "./SlideItem";
 
 function SampleNextArrow(props) {
    const {onClick} = props
@@ -53,3 +53,4 @@ export default function ProductsSlider({data}){
     
     )
 }
+
