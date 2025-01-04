@@ -111,7 +111,7 @@ function Item({itemRef , data}){
                     {data.details.map((item , index)=>(
                         <li key={index} className="text-sm mb-3 text-gray-500">
                             <span className="text-gray-500 bakh-reg">{item.title} :</span>
-                            <span className="text-gray-700 bakh-bold mr-2">{item.desc}</span>
+                            <span className="text-gray-600 bakh-bold mr-2">{item.desc}</span>
                         </li>
                     ))}
                 </ul>
@@ -122,17 +122,17 @@ function Item({itemRef , data}){
            </div>
             {/* imgs */}
             <div className="w-[45%] flex justify-between">
-                <div className="flex flex-col gap-5 w-[24%] px-1">
+                <div className="flex flex-col gap-5 w-[30%] px-1">
                     {data.imgs.map((item)=>
-                        (<div className="w-full h-20 border bg-white">
-                            <img src={item.src} className="p-2 w-full h-full object-fill " />
+                        (<div className="w-full h-24 border bg-white">
+                            <img src={item.src} className="p-1 w-full h-full object-fill " />
                          </div>
                         ))
                         }
                 </div>
                 
                 
-                <div className="w-[75%]  bg-red-600">
+                <div className="w-[69%]  bg-red-600">
                     <img src={data.cover} className="w-full h-full object-cover"/>
                 </div>
             </div>

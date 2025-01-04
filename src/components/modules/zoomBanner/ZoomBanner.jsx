@@ -1,7 +1,7 @@
 export default function ZoomBanner({width , imgAlt , img }){
     return(
         <div 
-         style={{width:width}}
+        //  style={{width:width}}
          className="rounded-2xl shadow-2xl overflow-hidden"
         >
             <a href="#">
