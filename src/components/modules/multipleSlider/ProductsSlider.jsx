@@ -37,6 +37,32 @@ export default function ProductsSlider({data}){
         cssEase: "ease-in-out",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow /> ,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+             
+            }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow:2.3,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2.2,
+              slidesToScroll: 1
+            }
+          }
+        ]
       }
 
       console.log(data)
@@ -44,7 +70,7 @@ export default function ProductsSlider({data}){
 
     return(
         <div className="mt-8 px-4">
-            <Slider {...settings}>
+            <Slider {...settings} className="multipleslider gap-6">
                 {
                     data.map((item , index )=> <SlideItem key={index} data={item}/>)
                 }

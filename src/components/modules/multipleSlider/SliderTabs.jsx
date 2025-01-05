@@ -16,8 +16,11 @@ export default function SliderTabs({tabsData , setSliderIndex , sliderIndex }){
 
     }    
     return(
-        <div className={`flex mx-4 ${activeTab(sliderIndex)}`}>
-           {tabsData.map((tab , index )=> <TabButton key={index} index={tab.index} name={tab.name} sliderIndex={sliderIndex} setSliderIndex={setSliderIndex}/>)}
+        <div className="w-full max-w-[1290px]  overflow-scroll lg:overflow-visible py-5">
+            <div className={`w-full flex px-4 ${activeTab(sliderIndex)} `}>
+                {tabsData.map((tab , index )=> <TabButton key={index} index={tab.index} name={tab.name} sliderIndex={sliderIndex} setSliderIndex={setSliderIndex}/>)}
+            </div>
         </div>
+       
     )
 }

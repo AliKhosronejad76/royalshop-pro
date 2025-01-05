@@ -12,6 +12,7 @@
 }
 body{
   font-family: 'bakh-bold';
+  overflow-x:hidden;
   
 }
 p , a , ul , li , span , h1 , h2 , h3 ,h4 ,h5  ,input {
@@ -30,9 +31,24 @@ p , a , ul , li , span , h1 , h2 , h3 ,h4 ,h5  ,input {
   /* overflow-y: scroll; */
 }
 
+
+
+
 .sliderItem{
   scroll-snap-align: start;
 }
 
 
+.multipleslider .slick-slide {
+  margin-right:  0.3rem;
+  margin-left: 0.3rem;
+}
 
+.multipleslider .slick-track{
+ 
+  max-height: 100% !important;
+  min-height: 100% !important;
+  flex-wrap: nowrap;
+  display: flex;
+
+}
