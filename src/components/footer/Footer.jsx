@@ -10,7 +10,7 @@ export default function Footer(){
             <FooterMenus/>
             <FooterInfo/>
             <div className="bg-gray-100 py-6 flex items-center justify-center text-sm text-gray-500">
-                <p>
+                <p className="text-center px-2 leading-loose ">
                 با قالب فروشگاهی پروشاپ رویال، رویاهات رو به واقعیت تبدیل کن ! پروشاپ رویال ، منعطف‌ترین قالب فروشگاهی ایران.
                 </p>
             </div>

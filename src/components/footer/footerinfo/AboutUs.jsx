@@ -4,7 +4,7 @@ import FooterColTitle from "../FooterColTilte";
 export default function AboutUs(){
     const [ show , setShow ] = useState(false)
     return(
-        <div className="w-[58%] ">
+        <div className="w-full lg:w-[58%] ">
             <FooterColTitle title="فروشگاه اینترنتی پروشاپ رویال، تحولی عظیم در قالب‌های فروشگاهی وردپرس" />
             <div>
                 <p className="text-justify leading-loose p-2 text-sm">
