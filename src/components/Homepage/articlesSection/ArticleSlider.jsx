@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
       <div
-       className="w-[35px] h-[35px] rounded-full text-white text-3xl flex items-center justify-center bg-[#000] opacity-45 absolute right-[15px] top-[45%] cursor-pointer"
+       className="w-[35px] h-[35px] rounded-full text-white text-3xl flex items-center justify-center bg-[#000] opacity-45 absolute right-[-25px] top-[45%] cursor-pointer"
        onClick={onClick}
       >
         <MdKeyboardArrowRight/>
@@ -21,7 +21,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
         <div
-         className="w-[35px] h-[35px] rounded-full text-white text-3xl flex items-center justify-center bg-[#000] opacity-45 absolute z-20 left-[15px] top-[45%] cursor-pointer"
+         className="w-[35px] h-[35px] rounded-full text-white text-3xl flex items-center justify-center bg-[#000] opacity-45 absolute z-20 left-[-25px] top-[45%] cursor-pointer"
          onClick={onClick}
         >
             <MdKeyboardArrowLeft/>
@@ -44,6 +44,32 @@ export default function ArticleSlider(){
         cssEase: "ease",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+           
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
 
       }
     return(
