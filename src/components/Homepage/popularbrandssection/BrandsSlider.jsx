@@ -12,6 +12,33 @@ export default function BrandsSlider(){
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+              infinite: true,
+              
+            }
+          },
+        
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2.5,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1.5,
+              slidesToScroll: 1
+            }
+          }
+        ]
       }
 
     return(
