@@ -3,6 +3,8 @@ import {data} from "../data";
 import { FaArrowLeft } from "react-icons/fa6";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import { RiArrowLeftDoubleLine } from "react-icons/ri";
+import { e2p } from "../../../../e2p";
+
 
 export default function OffBanner(){
     const [bannerData , setBannerData] = useState(data);    
@@ -42,16 +44,16 @@ export default function OffBanner(){
                     {/* header c */}
                     <div className="px-5 h-max md:h-[4rem] flex flex-col md:flex-row md:justify-between ">
                         <div className="w-full md:w-[50%] flex order-2 md:order-1 py-4  justify-between">
-                            <div  onClick={()=>sliderSwitcher(1)} className="text-sm flex items-center">
+                            <div  onClick={()=>sliderSwitcher(1)} className="text-sm flex items-center cursor-pointer">
                             <RiArrowRightDoubleLine />
                                 <span>
                                     بعدی
                                 </span>
                             </div>
-                            <div className="items-center flex">
-                                2/1
+                            <div className="items-center flex text-gray-700">
+                               {e2p(1)}/{e2p(2)}
                             </div>
-                            <div  onClick={()=>sliderSwitcher(-1)} className="text-sm flex items-center">
+                            <div  onClick={()=>sliderSwitcher(-1)} className="text-sm flex items-center cursor-pointer">
                                 <span>
                                     قبلی
                                 </span>
@@ -89,12 +91,12 @@ function Item({itemRef , data}){
                 <div className="flex justify-between items-center w-full bakh-reg">
                     <div  className="text-lg lg:text-2xl flex ">
                         <h4 className="tracking-widest">
-                             {data.price} تومان 
+                             {e2p(data.price)} تومان 
                         </h4>
                     </div>
 
                     <div className="flex items-center bg-red-500 py-2 px-4 text-white text-sm rounded-tr-full rounded-br-full rounded-bl-xl rounded-tl-sm">
-                        <span className="ml-2 text-white">{data.off}%</span>
+                        <span className="ml-2 text-white">{e2p(data.off)}%</span>
                         تخفیف
                     </div>
 

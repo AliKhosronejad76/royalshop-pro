@@ -1,5 +1,5 @@
 import { useState , useRef, useEffect } from "react";
-
+import { e2p } from "../../../e2p";
 import OffBanner from "./offBanner/OffBanner";
 
 
@@ -45,7 +45,7 @@ function Box({img , quntity , category}){
             </div>
             <h1 className="mx-auto text-lg bakh-medium text-blue-600 text-center">{category}</h1>
             <p className="text-sm text-center ">
-                بیش از{quntity}محصول
+                بیش از{e2p(quntity)}محصول
             </p>
         </a>
     )

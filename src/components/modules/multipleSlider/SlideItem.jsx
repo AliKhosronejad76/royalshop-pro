@@ -1,5 +1,5 @@
 import AddToCardButton from "../../modules/addtoCardButton/AddToCardButton";
-
+import { e2p } from "../../../e2p";
 
 export default function SlideItem({data}){
     return(
@@ -12,7 +12,7 @@ export default function SlideItem({data}){
                   bgColor={"#eceff1"} 
 
                 />
-                <span className="text-sm ">1,234,500تومان</span>
+                <span className="text-sm ">{e2p('1,234,500')}تومان</span>
             </div>
        
         </div>

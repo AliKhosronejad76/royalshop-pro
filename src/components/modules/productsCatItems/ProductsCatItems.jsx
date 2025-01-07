@@ -1,4 +1,7 @@
-import { TbPoint } from "react-icons/tb"
+import { TbPoint } from "react-icons/tb";
+import {e2p} from "../../../e2p";
+
+
 export default function ProductsCatItems({ data }){
     console.log(data)
     return(
@@ -12,8 +15,7 @@ export default function ProductsCatItems({ data }){
                 {
                     data.items.map((item , i )=>(<li style={{borderColor : data.orgColor }} className="my-2.5 border-r-2 px-2">
                         <a href="#">
-                         {item.name}
-
+                         {e2p(item.name)}
                         </a>                        
                         </li>
                         ))

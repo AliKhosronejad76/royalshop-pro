@@ -1,6 +1,6 @@
-import AboutUs from "./AboutUs"
-import Downloads from "./Downloads"
-import Enamad from "./Enamad"
+import AboutUs from "./AboutUs";
+import Downloads from "./Downloads";
+import Enamad from "./Enamad";
 
 export default function FooterInfo(){
     return(

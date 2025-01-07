@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import AddToCardButton from "../modules/addtoCardButton/AddToCardButton";
-
+import { e2p } from "../../e2p";
 
 
 export default function RelatedProductSlider(){
@@ -95,14 +95,14 @@ function SlideItem({data}){
     return(
         <div className="bg-white mx-3  rounded-2xl pb-12">
             <img src={data.img} alt="" className="rounded-2xl "/>
-            <p className="mt-3 text-center text-sm text-gary-400">{data.title}</p>
+            <p className="mt-3 text-center text-sm text-gary-400">{e2p(data.title)}</p>
            
             <div className="flex px-4 justify-between items-center mt-6">
                 <AddToCardButton 
                   bgColor={"#eceff1"} 
   
                 />
-                <span className="text-sm ">1,234,500تومان</span>
+                <span className="text-sm ">{e2p('1,234,500تومان')}</span>
             </div>
        
         </div>

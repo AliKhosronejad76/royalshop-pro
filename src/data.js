@@ -186,6 +186,73 @@ export const listData = [
 
 
 
-export const menuData = [
+export const bestselingData = [
+    {
+        title:"گوشی موبایل",
+        products:[
+            {
+                title:"گوشی موبایل اپل iPhone 13 Pro Max فضای 256 گیگ دو ",
+                img:"/img/mobileslider/iphone-13-ProMax-01.jpg",
+            },
+            {
+                title:"گوشی موبایل سامسونگ مدل Galaxy A20 دو سیم کارت ",
+                img:"/img/mobileslider/a20-22.jpg",
+            },
+            {
+                title:"گوشی موبایل سامسونگ مدل Galaxy S21 Ultra 5G دو سیم ",
+                img:"/img/mobileslider/s21-pic11.jpg",
+            },
+            {
+                img:"/img/mobileslider/A425G-min-1.jpg",
+                title:"گوشی موبایل سامسونگ مدل Galaxy A42 دو سیم کارت 128 ",
+            }, 
+        ],
+    } ,
+        {
+        title:"ساعت مچی",
+        products:[
+            {
+                title:"ساعت مردانه آلبرت ریله",
+                img:"/img/watchsSlider/Albert-Riley-Men-Watch-11.jpg",
+            } , 
+            {
+                title:"ساعت مردانه اینگرسول عقربه‌ای دسته چرمی",
+                img:"/img/watchsSlider/Ingersoll-Men-Watch-22.jpg",
+            } , 
+            {
+                title:"ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R850",
+                img:"/img/watchsSlider/Galaxy-Watch3-SM-R850-11.jpg",
+            } , 
+            {
+                title:"ساعت مچی عقربه ای مردانه فسیل مدل FS5068",
+                img:"/img/watchsSlider/fossil-watch.webp",
+            } , 
+        ],
+    },
+    {
+        title:"تجهیزات عکاسی",
+        products:[
+           {
+            title:"دوربین دیجیتال نیکون مدل D7500",
+            img:"/img/cameraSlider/camera-EOS-850D-11.jpg",
+           },
 
-]
+           {
+            title:"دوربین دیجیتال نیکون مدل Lumix",
+            img:"/img/cameraSlider/Lumix-DC-GH5A-1.jpg",
+           },
+           {
+            title:"دوربین دیجیتال کانن مدل EOS 850D",
+            img:"/img/cameraSlider/nikon-D7500-1.jpg",
+           },
+           {
+            title:"دوربین دیجیتال کانن مدل EOS 1300D",
+            img:"/img/cameraSlider/Fancier-FC-0270-3-3.jpg",
+           },
+
+        
+            
+        ],
+    }
+    
+];

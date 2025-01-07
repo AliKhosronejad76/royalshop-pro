@@ -5,12 +5,14 @@ import { GrCompare } from "react-icons/gr";
 import { FaCheck } from "react-icons/fa";
 import { RiShoppingBag4Line } from "react-icons/ri";
 import { TbTruckDelivery } from "react-icons/tb";
+import {e2p} from "../../../e2p";
+
 
 export default function ProductBox(){
     return(
         <div className="w-full md:w-[48%] bg-white rounded-lg bakh-medium py-7 px-7 shadow-sm">
             <h4 className="text-lg mb-2">
-                ساعت مردانه آلبرت ریه
+                {e2p('ساعت مردانه آلبرت ریه')}
             </h4>
 
 
@@ -36,7 +38,7 @@ export default function ProductBox(){
             
             <div className="flex items-center gap-2">
                 <TbTruckDelivery className="text-red-600 text-3xl"/>
-                <h4>ارسال رایگان برای خرید بالای 1,000,000 تومان </h4>
+                <h4>{e2p('ارسال رایگان برای خرید بالای 1,000,000 تومان')} </h4>
             </div>
 
             
@@ -47,21 +49,21 @@ export default function ProductBox(){
 
             <ul className="flex flex-col gap-4">
                 <li className="flex items-center gap-4">
-                    <FaCheck className="text-xl text-sky-500"/>
+                    <FaCheck className="text-lg text-sky-400"/>
                     <span>
                     درباره این ساعت بیشتر بدانید
                     </span>
                 </li>
                 
                 <li className="flex items-center gap-4">
-                    <FaCheck className="text-xl text-sky-500"/>
+                    <FaCheck className="text-lg text-sky-400"/>
 
                     <span>
                     آموزش استفاده از این ساعت
                     </span>
                 </li>
                 <li className="flex items-center gap-4">
-                  <FaCheck className="text-xl text-sky-500"/>
+                  <FaCheck className="text-lg text-sky-400"/>
                   <span>
                   امکانات ساعت‌های هوشمند
                   </span>
@@ -72,7 +74,7 @@ export default function ProductBox(){
 
             <div className="my-8 px-3">
                 <p className="text-2xl bakh-medium text-sky-500">
-                4,620,000 تومان
+                {e2p('4,620,000 تومان')}
                 </p>
             </div>
 
@@ -83,7 +85,7 @@ export default function ProductBox(){
                         +
                     </button>
                     <div className="border-r border-l w-[33%] flex items-center justify-center h-full">
-                        0
+                        {e2p(0)}
                     </div>
                     <button className="w-[33%] flex items-center justify-center h-full">
                         -
