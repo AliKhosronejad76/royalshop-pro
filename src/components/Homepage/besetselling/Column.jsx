@@ -5,7 +5,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md"
 export default function Column({data}){
     const [ hover , setHover ] = useState(false)
     return(
-        <div className="w-[33%]  px-3 py-5">
+        <div className="w-full md:w-[33%]  px-3 py-5">
             <h3 className="pb-4">گوشی موبایل</h3>
 
             <div className="w-full  flex justify-between flex-wrap py-2 [&>:first-child]:border-l  [&>:first-child]:border-b [&>:first-child]:border-[#e2e2e2] [&>:last-child]:border-t [&>:last-child]:border-r [&>:last-child]:border-[#e2e2e2] ">
