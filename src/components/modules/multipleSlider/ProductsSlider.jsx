@@ -8,7 +8,7 @@ import SlideItem from "./SlideItem";
 function SampleNextArrow(props) {
    const {onClick} = props
     return (
-      <div onClick={onClick} className="text-gray-600 w-[35px] h-[35px] rounded-full cursor-pointer absolute z-20 bg-white border border-gray-400 flex items-center justify-center text-3xl right-0 top-[44%]">
+      <div onClick={onClick} className="text-gray-600 w-[35px] h-[35px] rounded-full cursor-pointer absolute z-20 bg-white border border-gray-400 flex items-center justify-center text-3xl right-[-10px] top-[44%]">
         <MdKeyboardArrowRight/>
       </div>
     );
@@ -17,7 +17,7 @@ function SampleNextArrow(props) {
   function SamplePrevArrow(props) {
     const {onClick} = props;
     return (
-    <div onClick={onClick} className="text-gray-600 w-[35px] h-[35px] rounded-full cursor-pointer absolute z-20 bg-white border border-gray-400 flex items-center justify-center text-3xl left-0 top-[44%]">
+    <div onClick={onClick} className="text-gray-600 w-[35px] h-[35px] rounded-full cursor-pointer absolute z-20 bg-white border border-gray-400 flex items-center justify-center text-3xl left-[-10px] top-[44%]">
            <MdKeyboardArrowLeft/>
       </div>
     )
