@@ -4,7 +4,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import { RiArrowLeftDoubleLine } from "react-icons/ri";
 import { e2p } from "../../../../e2p";
-
+import { Link } from "react-router-dom";
 
 export default function OffBanner(){
     const [bannerData , setBannerData] = useState(data);    
@@ -104,7 +104,7 @@ function Item({itemRef , data}){
 
                 {/* title  */}
                 <div className="mx-7 py-10 bakh-light text-center ">
-                    <a className="text-lg lg:text-2xl leading-loose transition duration-500 hover:text-sky-500"  href="/">{data.fullName}</a>
+                    <Link to={"/products/demo123"} className="text-lg lg:text-2xl leading-loose transition duration-500 hover:text-sky-500"  href="/">{data.fullName}</Link>
                 </div>
 
                 {/* title  */}
