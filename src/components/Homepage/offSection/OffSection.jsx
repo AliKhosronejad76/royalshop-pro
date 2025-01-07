@@ -6,7 +6,7 @@ import OffBanner from "./offBanner/OffBanner";
 export default function OffSection(){
 
     return(
-        <div className="bg-[#e9e9e9] flex flex-col items-center py-16 gap-5">
+        <div className="min-w-full bg-[#e9e9e9] flex flex-col items-center py-16 gap-5">
                 <div className="mb-20">
                     <img src="/img/home-off-banner-02.webp"/>
                 </div>

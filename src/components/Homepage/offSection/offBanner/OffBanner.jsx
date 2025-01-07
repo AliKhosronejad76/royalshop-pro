@@ -25,9 +25,9 @@ export default function OffBanner(){
     }
     
     return(
-        <div className="w-[90%] h-[38rem]  flex my-7">
+        <div className="bg-white rounded-xl w-[97%] lg:w-[90%] h-max  lg:h-[38rem]  flex my-7">
                 {/* col  */}
-                <div className="bg-red-500 h-full w-[25%] rounded-tr-xl rounded-br-xl py-7 flex flex-col items-center justify-center gap-32">
+                <div className="hidden opacity-0 w-[0px] md:w-[25%] md:opacity-100 md:flex bg-red-500 h-full  rounded-tr-xl rounded-br-xl py-7  flex-col items-center justify-center gap-32">
                     <img src="/img/offer-home-01.png" />
                    
                     <a href="/" className="flex items-center gap-4 text-white">
@@ -38,10 +38,10 @@ export default function OffBanner(){
 
                 {/* col  */}
 
-                <div className="w-[75%] flex-col flex h-full bg-white rounded-tl-xl rounded-bl-xl">
+                <div className="w-full md:w-[75%] flex-col flex h-full bg-white rounded-tl-xl rounded-bl-xl">
                     {/* header c */}
-                    <div className="px-5 h-[4rem] flex  justify-between ">
-                        <div className="w-[50%] flex  justify-between">
+                    <div className="px-5 h-max md:h-[4rem] flex flex-col md:flex-row md:justify-between ">
+                        <div className="w-full md:w-[50%] flex order-2 md:order-1 py-4  justify-between">
                             <div  onClick={()=>sliderSwitcher(1)} className="text-sm flex items-center">
                             <RiArrowRightDoubleLine />
                                 <span>
@@ -59,8 +59,8 @@ export default function OffBanner(){
                             </div>
                         </div>
 
-                        <div className="w-[50%] h-[3rem] flex  justify-center">
-                            <h1 className="rounded-br-[1rem] rounded-bl-[1rem] text-white bg-red-500 h-full text-xl text-center px-8 flex items-center w-max bakh-reg">
+                        <div className="w-full order-1 md:order-2 md:w-[50%] h-[3rem] flex  justify-center">
+                            <h1 className="rounded-br-[1rem] rounded-bl-[1rem] text-white bg-red-500 h-full text-base  lg:text-xl text-center px-8 flex items-center w-max bakh-reg">
                             پیشنهادهای ویژه
                             </h1>
                         </div>
@@ -69,7 +69,7 @@ export default function OffBanner(){
                     {/* header c */}
 
                     {/* slider  */}
-                    <div ref={containerRef} className="w-full max-w-[1950px] overflow-scroll scroll-container ">
+                    <div ref={containerRef} className="w-full h-full max-w-[1950px] overflow-x-scroll scroll-container ">
                             <div   className="w-full  flex  ">
                                 {bannerData.map((item)=><Item key={item.id} data={item} itemRef={itemRef} />)}
                             </div>
@@ -84,10 +84,10 @@ export default function OffBanner(){
 
 function Item({itemRef , data}){
     return(
-        <div ref={itemRef}  className="min-w-full flex justify-between py-5 px-9">
-           <div className="w-[52%] ">
-                <div className="flex justify-between w-full bakh-reg">
-                    <div  className=" text-2xl flex ">
+        <div ref={itemRef}  className="min-w-full h-full flex flex-col md:flex-row gap-8 md:gap-0 lg:justify-between py-5 px-5 md:px-9">
+           <div className="w-full md:w-[49%] order-2 md:order-1">
+                <div className="flex justify-between items-center w-full bakh-reg">
+                    <div  className="text-lg lg:text-2xl flex ">
                         <h4 className="tracking-widest">
                              {data.price} تومان 
                         </h4>
@@ -102,7 +102,7 @@ function Item({itemRef , data}){
 
                 {/* title  */}
                 <div className="mx-7 py-10 bakh-light text-center ">
-                    <a className="text-2xl leading-loose transition duration-500 hover:text-sky-500"  href="/">{data.fullName}</a>
+                    <a className="text-lg lg:text-2xl leading-loose transition duration-500 hover:text-sky-500"  href="/">{data.fullName}</a>
                 </div>
 
                 {/* title  */}
@@ -121,11 +121,11 @@ function Item({itemRef , data}){
 
            </div>
             {/* imgs */}
-            <div className="w-[45%] flex justify-between">
+            <div className="w-full md:w-[48%] order-1 md:order-2 flex justify-between">
                 <div className="flex flex-col gap-5 w-[30%] px-1">
                     {data.imgs.map((item)=>
                         (<div className="w-full h-24 border bg-white">
-                            <img src={item.src} className="p-1 w-full h-full object-fill " />
+                            <img src={item.src} className="p-1 w-full h-full object-cvoer" />
                          </div>
                         ))
                         }
@@ -133,7 +133,7 @@ function Item({itemRef , data}){
                 
                 
                 <div className="w-[69%]  bg-red-600">
-                    <img src={data.cover} className="w-full h-full object-cover"/>
+                    <img src={data.cover} className="w-full h-full object-cover "/>
                 </div>
             </div>
 
