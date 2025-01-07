@@ -30,7 +30,7 @@ export default function ProductSlider(){
 
 
    return(
-        <div className="relative flex flex-col justify-between py-8 w-[48%] bg-white rounded-lg">
+        <div className="relative flex flex-col justify-between py-8 w-full md:w-[48%] bg-white rounded-lg">
             <div className="w-full h-[70%] ">
                 <ImageZoomSlider 
                     className="w-full h-full transition-all duration-300"

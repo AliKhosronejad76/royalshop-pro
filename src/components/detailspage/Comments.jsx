@@ -10,7 +10,7 @@ export default function Comments(){
             </div>
 
             <form
-             className="flex flex-col m-4 gap-4 w-[70%]"
+             className="flex flex-col m-4 gap-4 mx-auto lg:mx-0 w-[98%] lg:w-[70%]"
             >
                 <div className="flex flex-col gap-3">
                     <label className="text-gray-500" htmlFor="">دیدگاه شما</label>

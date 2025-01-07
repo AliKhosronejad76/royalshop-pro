@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { FaShareNodes } from "react-icons/fa6";
 import { IoIosHeart } from "react-icons/io";
 import { GrCompare } from "react-icons/gr";
@@ -9,7 +8,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 export default function ProductBox(){
     return(
-        <div className="w-[48%] bg-white rounded-lg bakh-medium py-7 px-7 shadow-sm">
+        <div className="w-full md:w-[48%] bg-white rounded-lg bakh-medium py-7 px-7 shadow-sm">
             <h4 className="text-lg mb-2">
                 ساعت مردانه آلبرت ریه
             </h4>
@@ -78,8 +77,8 @@ export default function ProductBox(){
             </div>
 
             {/* action */}
-            <div className="w-full flex items-center justify-between text-lg text-gray-700">
-                <div className="flex w-[30%] border rounded-md h-[50px]">
+            <div className="w-full flex flex-col gap-3 md:flex-row items-center justify-between text-lg text-gray-700">
+                <div className="w-full flex md:w-[30%] border rounded-md h-[50px]">
                     <button className="w-[33%] flex items-center justify-center h-full">
                         +
                     </button>
@@ -90,7 +89,7 @@ export default function ProductBox(){
                         -
                     </button>
                 </div>
-                <div className="w-[67%]">
+                <div className="w-full md:w-[67%]">
                 <AddToCard/>
                 </div>
                

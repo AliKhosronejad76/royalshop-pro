@@ -3,7 +3,7 @@ import InfoItem from "../../modules/infoItem/InfoItem";
 
 export default function Info({infoRef}){
     return(
-        <div ref={infoRef} className="bg-white p-7 mt-9 mb-20">
+        <div ref={infoRef} className="bg-white px-4 lg:p-7 mt-9 mb-20">
             <div className="flex flex-col gap-2 py-4 px-5">
                 <h1 className="text-xl">بررسی تخصصی</h1>
                 <h4 className="text-sm text-gray-400">Albert Riley Men Watch</h4>
@@ -11,34 +11,34 @@ export default function Info({infoRef}){
             </div>
 
             <div className="my-8 px-5">
-                <div className="mb-4">
+                <div className="mb-4 h-max">
                     <InfoTitle title={"مشخصات کلی"}/>
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 h-max">
                   <InfoItem 
                     title="وزن"
                     desc="53 گرم"
                   />
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 h-max">
                     <InfoItem 
                       title="جنس بدنه"
                       desc="فلز"
                     />
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 h-max">
                     <InfoItem 
                       title="جنس شیشه"
                       desc="گوریلا گلس DX+"
                     />
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 h-max">
                     <InfoItem
                       title="فرم صفحه"
                       desc="گرد"
                     />
                 </div>
-                <div className="mb-2">
+                <div className="mb-2 h-max">
                     <InfoItem
                       title="نوع قفل بند"
                       desc="سگکی ساده"
