@@ -20,7 +20,7 @@ export default function Banner(){
          prevArrow: <SamplePrevArrow arrow={arrow}/>,
     }
     return(
-      <div  onMouseEnter={()=>setArrow(true)} onMouseLeave={()=>setArrow(false)}>
+      <div className="hidden opacity-0 md:opacity-100 md:block" onMouseEnter={()=>setArrow(true)} onMouseLeave={()=>setArrow(false)}>
             <Slider {...settings} className="">
                <BannerSlide img="/img/home-slide-18.webp"/>
                <BannerSlide img="/img/home-slide-15.webp" />
