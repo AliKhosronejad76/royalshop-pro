@@ -9,7 +9,7 @@ export default function SlideItem({data}){
             <Link to="/products/demo123">
                 <img src={data.img} alt="" className="w-full rounded-2xl object-contain"/>
             </Link>
-            <Link to="/product/demo123">
+            <Link to="/products/demo123">
                 <p className="mt-3 text-center text-sm text-gary-400 text-wrap p-3">{data.title}</p>
             </Link>
            
