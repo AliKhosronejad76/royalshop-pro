@@ -1,5 +1,5 @@
-import FooterColTitle from "../FooterColTilte"
-import ListItemLink from "../ListItemLink"
+import FooterColTitle from "../FooterColTilte";
+import ListItemLink from "../ListItemLink";
 
 export default function ProshopServices(){
     return(
