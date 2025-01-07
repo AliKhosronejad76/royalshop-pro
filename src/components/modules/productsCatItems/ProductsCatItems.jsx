@@ -3,7 +3,7 @@ import {e2p} from "../../../e2p";
 
 
 export default function ProductsCatItems({ data }){
-    console.log(data)
+    
     return(
         <div className="flex flex-col items-start">
             <img src={data.imgCat} alt="" />
@@ -13,7 +13,7 @@ export default function ProductsCatItems({ data }){
             </div>
             <ul className="my-2">
                 {
-                    data.items.map((item , i )=>(<li style={{borderColor : data.orgColor }} className="my-2.5 border-r-2 px-2">
+                    data.items.map((item , i )=>(<li key={i} style={{borderColor : data.orgColor }} className="my-2.5 border-r-2 px-2">
                         <a href="#">
                          {e2p(item.name)}
                         </a>                        

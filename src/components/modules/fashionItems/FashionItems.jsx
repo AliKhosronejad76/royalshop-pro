@@ -5,7 +5,7 @@ export default function FashionItems({data}){
             <ul className="px-2">
                {
                 data.items.map((item , index )=>(
-                    <li className="text-sm my-3">
+                    <li key={index} className="text-sm my-3">
                     <a href="#">
                         {item.name}
                     </a>

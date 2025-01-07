@@ -65,7 +65,7 @@ export default function ProductsSlider({data}){
         ]
       }
 
-      console.log(data)
+
 
 
     return(

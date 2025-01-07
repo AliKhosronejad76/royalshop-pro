@@ -73,7 +73,7 @@ export default function OffBanner(){
                     {/* slider  */}
                     <div ref={containerRef} className="w-full h-full max-w-[1950px] overflow-x-scroll scroll-container ">
                             <div   className="w-full  flex  ">
-                                {bannerData.map((item)=><Item key={item.id} data={item} itemRef={itemRef} />)}
+                                {bannerData.map((item )=><Item key={item.id} data={item} itemRef={itemRef} />)}
                             </div>
                     </div>
                     {/* slider  */}
@@ -125,8 +125,8 @@ function Item({itemRef , data}){
             {/* imgs */}
             <div className="w-full md:w-[48%] order-1 md:order-2 flex justify-between">
                 <div className="flex flex-col gap-5 w-[30%] px-1">
-                    {data.imgs.map((item)=>
-                        (<div className="w-full h-24 border bg-white">
+                    {data.imgs.map((item , index)=>
+                        (<div key={index} className="w-full h-24 border bg-white">
                             <img src={item.src} className="p-1 w-full h-full object-cvoer" />
                          </div>
                         ))

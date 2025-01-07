@@ -3,7 +3,7 @@ import ProductsBrandList from "../../modules/productBrandList/ProductsBrandList"
 import { brands } from "./data";
 
 export default function FashionMenu({ data }){
-    console.log(data)
+  
     return(
         <div className=" px-1 py-3 flex justify-between">
             <div className="w-[63%] flex flex-wrap [&>:nth-child(2)]:border-r [&>:nth-child(2)]:border-gray-300 [&>:nth-child(3)]:border-r [&>:nth-child(3)]:border-gray-300">
