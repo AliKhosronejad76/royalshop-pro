@@ -9,7 +9,7 @@ export default function GroupingSection(){
         <div className="mt-10">
             <h1 className="text-center text-xl pt-4 ">بر اساس دسته بندی </h1>
         
-            <div className="flex flex-wrap  justify-center mt-4 mb-6 lg:px-32">
+            <div className="flex flex-wrap  justify-center mt-4 mb-6 lg:px-16 lg:gap-5">
                 {
                     groupingItems.map((item, index )=> <Item data={item} key={index}/>)
                 }
