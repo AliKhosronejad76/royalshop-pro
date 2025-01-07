@@ -31,7 +31,7 @@ function Box({img , quntity , category}){
     const [hover , setHover] = useState(false);
     return(
         <a 
-            className={`${hover ?"translate-y-[-6px]":"translate-y-[0px]"} transition duration-300 gap-4 w-[31%] flex flex-col items-center justify-center mb-16`}
+            className={`${hover ?"translate-y-[-6px]":"translate-y-[0px]"} transition duration-300 w-[49%] md:w-[32%]  gap-4 lg:w-[31%] flex flex-col items-center justify-center mb-16`}
             onMouseEnter={()=>setHover(true)}
             onMouseLeave={(()=>setHover(false))}
             href="/"
